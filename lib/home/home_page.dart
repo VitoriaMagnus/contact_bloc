@@ -18,7 +18,11 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context).pushNamed('/bloc/example');
                     }),
-                _ButtonCard(title: 'Example Freezed', onPressed: () {}),
+                _ButtonCard(
+                    title: 'Example Freezed',
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/bloc/example/freezed');
+                    }),
                 _ButtonCard(title: 'Contact', onPressed: () {}),
                 _ButtonCard(title: 'Contact Cubit', onPressed: () {}),
               ],
