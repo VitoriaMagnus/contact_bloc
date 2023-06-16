@@ -7,6 +7,7 @@ class ExampleFreezedState with _$ExampleFreezedState {
   factory ExampleFreezedState.showBanner(
       {required List<String> names,
       required String message}) = _ExampleFreezedStateShowBanner;
+  factory ExampleFreezedState.remove() = _ExampleFreezedStateRemove;
   factory ExampleFreezedState.data({required List<String> names}) =
       _ExampleFreezedStateData;
 }

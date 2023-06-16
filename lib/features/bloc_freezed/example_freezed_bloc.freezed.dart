@@ -21,6 +21,7 @@ mixin _$ExampleFreezedState {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
     required TResult Function(List<String> names) data,
   }) =>
       throw _privateConstructorUsedError;
@@ -29,6 +30,7 @@ mixin _$ExampleFreezedState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
     TResult? Function(List<String> names)? data,
   }) =>
       throw _privateConstructorUsedError;
@@ -37,6 +39,7 @@ mixin _$ExampleFreezedState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
     TResult Function(List<String> names)? data,
     required TResult orElse(),
   }) =>
@@ -46,6 +49,7 @@ mixin _$ExampleFreezedState {
     required TResult Function(_ExampleFreezedStateInitial value) initial,
     required TResult Function(_ExampleFreezedStateLoading value) loading,
     required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
     required TResult Function(_ExampleFreezedStateData value) data,
   }) =>
       throw _privateConstructorUsedError;
@@ -54,6 +58,7 @@ mixin _$ExampleFreezedState {
     TResult? Function(_ExampleFreezedStateInitial value)? initial,
     TResult? Function(_ExampleFreezedStateLoading value)? loading,
     TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
     TResult? Function(_ExampleFreezedStateData value)? data,
   }) =>
       throw _privateConstructorUsedError;
@@ -62,6 +67,7 @@ mixin _$ExampleFreezedState {
     TResult Function(_ExampleFreezedStateInitial value)? initial,
     TResult Function(_ExampleFreezedStateLoading value)? loading,
     TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
     TResult Function(_ExampleFreezedStateData value)? data,
     required TResult orElse(),
   }) =>
@@ -131,6 +137,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
     required TResult Function(List<String> names) data,
   }) {
     return initial();
@@ -142,6 +149,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
     TResult? Function(List<String> names)? data,
   }) {
     return initial?.call();
@@ -153,6 +161,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
     TResult Function(List<String> names)? data,
     required TResult orElse(),
   }) {
@@ -168,6 +177,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     required TResult Function(_ExampleFreezedStateInitial value) initial,
     required TResult Function(_ExampleFreezedStateLoading value) loading,
     required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
     required TResult Function(_ExampleFreezedStateData value) data,
   }) {
     return initial(this);
@@ -179,6 +189,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     TResult? Function(_ExampleFreezedStateInitial value)? initial,
     TResult? Function(_ExampleFreezedStateLoading value)? loading,
     TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
     TResult? Function(_ExampleFreezedStateData value)? data,
   }) {
     return initial?.call(this);
@@ -190,6 +201,7 @@ class _$_ExampleFreezedStateInitial implements _ExampleFreezedStateInitial {
     TResult Function(_ExampleFreezedStateInitial value)? initial,
     TResult Function(_ExampleFreezedStateLoading value)? loading,
     TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
     TResult Function(_ExampleFreezedStateData value)? data,
     required TResult orElse(),
   }) {
@@ -249,6 +261,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
     required TResult Function(List<String> names) data,
   }) {
     return loading();
@@ -260,6 +273,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
     TResult? Function(List<String> names)? data,
   }) {
     return loading?.call();
@@ -271,6 +285,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
     TResult Function(List<String> names)? data,
     required TResult orElse(),
   }) {
@@ -286,6 +301,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     required TResult Function(_ExampleFreezedStateInitial value) initial,
     required TResult Function(_ExampleFreezedStateLoading value) loading,
     required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
     required TResult Function(_ExampleFreezedStateData value) data,
   }) {
     return loading(this);
@@ -297,6 +313,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     TResult? Function(_ExampleFreezedStateInitial value)? initial,
     TResult? Function(_ExampleFreezedStateLoading value)? loading,
     TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
     TResult? Function(_ExampleFreezedStateData value)? data,
   }) {
     return loading?.call(this);
@@ -308,6 +325,7 @@ class _$_ExampleFreezedStateLoading implements _ExampleFreezedStateLoading {
     TResult Function(_ExampleFreezedStateInitial value)? initial,
     TResult Function(_ExampleFreezedStateLoading value)? loading,
     TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
     TResult Function(_ExampleFreezedStateData value)? data,
     required TResult orElse(),
   }) {
@@ -411,6 +429,7 @@ class _$_ExampleFreezedStateShowBanner
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
     required TResult Function(List<String> names) data,
   }) {
     return showBanner(names, message);
@@ -422,6 +441,7 @@ class _$_ExampleFreezedStateShowBanner
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
     TResult? Function(List<String> names)? data,
   }) {
     return showBanner?.call(names, message);
@@ -433,6 +453,7 @@ class _$_ExampleFreezedStateShowBanner
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
     TResult Function(List<String> names)? data,
     required TResult orElse(),
   }) {
@@ -448,6 +469,7 @@ class _$_ExampleFreezedStateShowBanner
     required TResult Function(_ExampleFreezedStateInitial value) initial,
     required TResult Function(_ExampleFreezedStateLoading value) loading,
     required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
     required TResult Function(_ExampleFreezedStateData value) data,
   }) {
     return showBanner(this);
@@ -459,6 +481,7 @@ class _$_ExampleFreezedStateShowBanner
     TResult? Function(_ExampleFreezedStateInitial value)? initial,
     TResult? Function(_ExampleFreezedStateLoading value)? loading,
     TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
     TResult? Function(_ExampleFreezedStateData value)? data,
   }) {
     return showBanner?.call(this);
@@ -470,6 +493,7 @@ class _$_ExampleFreezedStateShowBanner
     TResult Function(_ExampleFreezedStateInitial value)? initial,
     TResult Function(_ExampleFreezedStateLoading value)? loading,
     TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
     TResult Function(_ExampleFreezedStateData value)? data,
     required TResult orElse(),
   }) {
@@ -490,6 +514,130 @@ abstract class _ExampleFreezedStateShowBanner implements ExampleFreezedState {
   @JsonKey(ignore: true)
   _$$_ExampleFreezedStateShowBannerCopyWith<_$_ExampleFreezedStateShowBanner>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_ExampleFreezedStateRemoveCopyWith<$Res> {
+  factory _$$_ExampleFreezedStateRemoveCopyWith(
+          _$_ExampleFreezedStateRemove value,
+          $Res Function(_$_ExampleFreezedStateRemove) then) =
+      __$$_ExampleFreezedStateRemoveCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_ExampleFreezedStateRemoveCopyWithImpl<$Res>
+    extends _$ExampleFreezedStateCopyWithImpl<$Res,
+        _$_ExampleFreezedStateRemove>
+    implements _$$_ExampleFreezedStateRemoveCopyWith<$Res> {
+  __$$_ExampleFreezedStateRemoveCopyWithImpl(
+      _$_ExampleFreezedStateRemove _value,
+      $Res Function(_$_ExampleFreezedStateRemove) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_ExampleFreezedStateRemove implements _ExampleFreezedStateRemove {
+  _$_ExampleFreezedStateRemove();
+
+  @override
+  String toString() {
+    return 'ExampleFreezedState.remove()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_ExampleFreezedStateRemove);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
+    required TResult Function(List<String> names) data,
+  }) {
+    return remove();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
+    TResult? Function(List<String> names)? data,
+  }) {
+    return remove?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
+    TResult Function(List<String> names)? data,
+    required TResult orElse(),
+  }) {
+    if (remove != null) {
+      return remove();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_ExampleFreezedStateInitial value) initial,
+    required TResult Function(_ExampleFreezedStateLoading value) loading,
+    required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
+    required TResult Function(_ExampleFreezedStateData value) data,
+  }) {
+    return remove(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_ExampleFreezedStateInitial value)? initial,
+    TResult? Function(_ExampleFreezedStateLoading value)? loading,
+    TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
+    TResult? Function(_ExampleFreezedStateData value)? data,
+  }) {
+    return remove?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_ExampleFreezedStateInitial value)? initial,
+    TResult Function(_ExampleFreezedStateLoading value)? loading,
+    TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
+    TResult Function(_ExampleFreezedStateData value)? data,
+    required TResult orElse(),
+  }) {
+    if (remove != null) {
+      return remove(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ExampleFreezedStateRemove implements ExampleFreezedState {
+  factory _ExampleFreezedStateRemove() = _$_ExampleFreezedStateRemove;
 }
 
 /// @nodoc
@@ -568,6 +716,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(List<String> names, String message) showBanner,
+    required TResult Function() remove,
     required TResult Function(List<String> names) data,
   }) {
     return data(names);
@@ -579,6 +728,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(List<String> names, String message)? showBanner,
+    TResult? Function()? remove,
     TResult? Function(List<String> names)? data,
   }) {
     return data?.call(names);
@@ -590,6 +740,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(List<String> names, String message)? showBanner,
+    TResult Function()? remove,
     TResult Function(List<String> names)? data,
     required TResult orElse(),
   }) {
@@ -605,6 +756,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     required TResult Function(_ExampleFreezedStateInitial value) initial,
     required TResult Function(_ExampleFreezedStateLoading value) loading,
     required TResult Function(_ExampleFreezedStateShowBanner value) showBanner,
+    required TResult Function(_ExampleFreezedStateRemove value) remove,
     required TResult Function(_ExampleFreezedStateData value) data,
   }) {
     return data(this);
@@ -616,6 +768,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     TResult? Function(_ExampleFreezedStateInitial value)? initial,
     TResult? Function(_ExampleFreezedStateLoading value)? loading,
     TResult? Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult? Function(_ExampleFreezedStateRemove value)? remove,
     TResult? Function(_ExampleFreezedStateData value)? data,
   }) {
     return data?.call(this);
@@ -627,6 +780,7 @@ class _$_ExampleFreezedStateData implements _ExampleFreezedStateData {
     TResult Function(_ExampleFreezedStateInitial value)? initial,
     TResult Function(_ExampleFreezedStateLoading value)? loading,
     TResult Function(_ExampleFreezedStateShowBanner value)? showBanner,
+    TResult Function(_ExampleFreezedStateRemove value)? remove,
     TResult Function(_ExampleFreezedStateData value)? data,
     required TResult orElse(),
   }) {
