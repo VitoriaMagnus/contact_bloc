@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:contact_bloc/models/contact_model.dart';
 import 'package:contact_bloc/repositories/contact_repository.dart';
@@ -11,7 +10,7 @@ part 'contact_list_state.dart';
 part 'contact_list_bloc.freezed.dart';
 
 class ContactListBloc extends Bloc<ContactListEvent, ContactListState> {
-  ContactRepository _repository;
+  final ContactRepository _repository;
 
   ContactListBloc({required ContactRepository repository})
       : _repository = repository,
@@ -25,7 +24,7 @@ class ContactListBloc extends Bloc<ContactListEvent, ContactListState> {
       emit(ContactListState.loading());
       final contacts = await _repository.findAll();
       emit(ContactListState.data(contacts: contacts));
-    } catch (e, s) {
+    } catch (e) {
       emit(ContactListState.error(error: 'Erro ao buscar contatos'));
     }
   }

@@ -11,6 +11,8 @@ import 'package:contact_bloc/repositories/contact_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'features/contacts/register/bloc/contact_register_bloc.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -44,7 +46,11 @@ class MyApp extends StatelessWidget {
                   ContactListBloc(repository: context.read<ContactRepository>())
                     ..add(const ContactListEvent.findAll()),
               child: const ContactListPage()),
-          'contact/register': (context) => const ContactRegisterPage(),
+          'contact/register': (context) => BlocProvider(
+                create: (context) =>
+                    ContactRegisterBloc(contactsRepository: context.read()),
+                child: const ContactRegisterPage(),
+              ),
           'contact/update': (context) => const ContactUpdatePage(),
         },
         home: const HomePage(),
