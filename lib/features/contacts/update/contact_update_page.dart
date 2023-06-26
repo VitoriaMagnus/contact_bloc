@@ -38,13 +38,6 @@ class _ContactUpdatePageState extends State<ContactUpdatePage> {
         title: const Text('Contact Update'),
       ),
       body: BlocListener<ContactUpdateBloc, ContactUpdateState>(
-        // listenWhen: (previous, current) {
-        //   return current.maybeWhen(
-        //     success: () => true,
-        //     error: (message) => true,
-        //     orElse: () => false,
-        //   );
-        // },
         listener: (context, state) {
           state.whenOrNull(
             success: () => Navigator.of(context).pop(),

@@ -1,3 +1,4 @@
+import 'dart:async';
 
 import 'package:contact_bloc/models/contact_model.dart';
 import 'package:contact_bloc/repositories/contact_repository.dart';
@@ -16,6 +17,7 @@ class ContactListBloc extends Bloc<ContactListEvent, ContactListState> {
       : _repository = repository,
         super(ContactListState.initial()) {
     on<_ContactListEventFindAll>(_findAll);
+    on<_Delete>(_deleteById);
   }
 
   Future<void> _findAll(
@@ -25,7 +27,19 @@ class ContactListBloc extends Bloc<ContactListEvent, ContactListState> {
       final contacts = await _repository.findAll();
       emit(ContactListState.data(contacts: contacts));
     } catch (e) {
-      emit(ContactListState.error(error: 'Erro ao buscar contatos'));
+      emit(ContactListState.error(message: 'Erro ao buscar contatos'));
+    }
+  }
+
+  FutureOr<void> _deleteById(
+      _Delete event, Emitter<ContactListState> emit) async {
+    try {
+      emit(ContactListState.loading());
+
+      await _repository.delete(event.model);
+      add(const ContactListEvent.findAll());
+    } catch (e) {
+      emit(ContactListState.error(message: 'Erro ao deletar contato.'));
     }
   }
 }

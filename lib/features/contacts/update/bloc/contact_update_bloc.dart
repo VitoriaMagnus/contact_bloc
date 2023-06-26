@@ -17,6 +17,7 @@ class ContactUpdateBloc extends Bloc<ContactUpdateEvent, ContactUpdateState> {
       : _contactRepository = contactRepository,
         super(const _Initial()) {
     on<_Save>(_save);
+    // on<_Delete>(_delete);
   }
 
   FutureOr<void> _save(_Save event, Emitter<ContactUpdateState> emit) async {
