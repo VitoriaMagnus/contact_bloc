@@ -26,9 +26,13 @@ class HomePage extends StatelessWidget {
                 _ButtonCard(
                     title: 'Contact',
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/contacts_list');
+                      Navigator.of(context).pushNamed('/contact/list');
                     }),
-                _ButtonCard(title: 'Contact Cubit', onPressed: () {}),
+                _ButtonCard(
+                    title: 'Contact Cubit',
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('contact/cubit/list');
+                    }),
               ],
             ),
           ),
